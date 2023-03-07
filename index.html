@@ -9,32 +9,187 @@
 </head>
 
 <body>
-  <h1 class="site-heading">Новости культуры</h1>
-
   <header class="site-header">
-    <nav class="navigation header__navigation">
+    <!-- Вводная часть сайта -->
+    <nav class="navigation">
       <!-- Навигация главная -->
       <h2 class="visually-hidden">Навигация по сайту</h2>
+
+      <a class="logo" href="/">
+        <!-- Логотип интерактивный -->
+        <img class="logo__image" src="images/logo.svg" width="345" height="32" alt="Новости культуры">
+        <span class="visually-hidden">Главная страница</span>
+      </a>
+
+      <ul class="menu">
+        <!-- Основное меню навигации -->
+        <li class="menu__item">
+          <a class="menu__link" href="#">Новости</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Обзоры</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Музыка</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Архитектура</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Кино</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Театр</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Литература</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Религия</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Живопись</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="main-content">
+    <h1 class="visually-hidden">Новости культуры</h1>
+
     <section class="headline">
       <!-- Секция главной новости -->
-      <h2 class="headline__heading">Подводный отель</h2>
+      <h2 class="heading headline__heading">
+        <a class="headline__link" href="news.html">Подводный отель</a>
+      </h2>
+      <img class="headline__img" src="images/underwater-hotel.jpg" width="1440" height="464"
+        alt="Подводный отель в Дубаи">
+
+      <p class="headline__news">Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты
+        архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счёт нефти</p>
     </section>
+
     <section class="reviews">
       <!-- Секция обзоры -->
-      <h2 class="content__heading">ОБЗОРЫ</h2>
+      <h2 class="heading">ОБЗОРЫ</h2>
+
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <article class="review">
+            <h3 class="heading review__heading">
+              <a href="" class="review__link">«Шальные годы» Монпарнаса</a>
+            </h3>
+            <img class="review__img" src="images/monparnasse.jpg" width="371" height="203"
+              alt="Сцена из спектакля «Шальные годы» Монпарнаса">
+            <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы
+              Монпарнаса»</p>
+          </article>
+        </li>
+        <li class="reviews__item">
+          <article class="review">
+            <h3 class="heading review__heading">
+              <a href="" class="review__link">Анатомия за 30 секунд</a>
+            </h3>
+            <img class="review__img" src="images/clay-in-the-hands.jpg" width="371" height="203"
+              alt="Кусок глины в руках">
+            <p>Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к
+              научно-популярной литературе заметно вырос</p>
+          </article>
+        </li>
+        <li class="reviews__item">
+          <article class="review">
+            <h3 class="heading review__heading">
+              <a href="" class="review__link">Сферические чудаки</a>
+            </h3>
+            <img class="review__img" src="images/spherical-eccentrics.jpg" width="371" height="203"
+              alt="Сцена из спектакля «Чудаки и зануды»">
+            <p>Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере
+              спектакля «Чудаки и зануды»</p>
+          </article>
+        </li>
+      </ul>
     </section>
+
     <section class="promo">
       <!-- Секция промо -->
-      <h2 class="content__heading">АБОНЕМЕНТЫ В ТЕАТР</h2>
+      <h2 class="heading">АБОНЕМЕНТЫ В ТЕАТР</h2>
+
+      <ul class="promo__list">
+        <li class="promo__item">
+          <h3 class="heading promo__heading">Скидка 50% на весь сезон 2020</h3>
+          <p>Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей</p>
+        </li>
+        <li class="promo__item">
+          <h3 class="heading promo__heading">Места у сцены</h3>
+          <p>Только для обладателей абонементов будет возможность сесть поближе к сцене</p>
+        </li>
+        <li class="promo__item">
+          <h3 class="heading promo__heading">Автограф-сессия актёров</h3>
+          <p>После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф</p>
+        </li>
+      </ul>
+      <a class="link promo__link" href="#">Смотреть</a>
     </section>
   </main>
 
   <footer class="site-footer">
+    <!-- Колонтитул нижний сайта -->
     <h2 class="visually-hidden">Социальные сети и дополнительная навигация</h2>
+
+    <a class="logo" href="/">
+      <!-- Логотип интерактивный -->
+      <img class="logo__image" src="images/white-logo.svg" width="279" height="26" alt="Новости культуры">
+      <span class="visually-hidden">Главная страница</span>
+    </a>
+
+    <ul class="menu footer__navigation">
+      <!-- Основное меню навигации -->
+      <li class="menu__item">
+        <a class="menu__link" href="#">Новости</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Обзоры</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Музыка</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Архитектура</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Кино</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Театр</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Литература</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Религия</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Живопись</a>
+      </li>
+    </ul>
+
+    <ul class="socials list">
+      <li class="socials-item">
+        <a class="social-link instagram-icon" href="#">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      <li class="socials-item">
+        <a class="social-link facebook-icon" href="#">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="socials-item">
+        <a class="social-link twitter-icon" href="#">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+    </ul>
   </footer>
 
 </body>
