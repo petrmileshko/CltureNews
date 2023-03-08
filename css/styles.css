@@ -166,8 +166,12 @@
 }
 
 .socials {
+  max-width: 1170px;
   align-items: center;
-  justify-content: space-between;
+}
+
+.socials-item {
+  margin-bottom: 5px;
 }
 
 .socials-item:not(:last-child) {
