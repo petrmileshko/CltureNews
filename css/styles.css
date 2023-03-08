@@ -276,12 +276,10 @@
 }
 
 .reviews__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.reviews__item:not(:last-child) {
-  margin-right: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 26px;
+  row-gap: 26px;
 }
 
 .reviews__item:not(:first-child):not(:last-child) .review__heading {
