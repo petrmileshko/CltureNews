@@ -3,7 +3,7 @@
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/latothin.woff2"),
-      url("../fonts/latothin.woff");
+    url("../fonts/latothin.woff");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/PlayfairDisplay-Regular.woff2"),
-      url("../fonts/PlayfairDisplay-Regular.woff");
+    url("../fonts/PlayfairDisplay-Regular.woff");
   font-display: swap;
 }
 
