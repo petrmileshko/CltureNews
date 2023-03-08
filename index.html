@@ -9,15 +9,15 @@
 </head>
 
 <body class="page flex_column">
-  <header class="header page__header">
+  <header class="header">
     <!-- Вводная часть сайта -->
-    <nav class="navigation">
+    <nav class="navigation flex_column box-center">
       <!-- Навигация главная -->
       <h2 class="visually-hidden">Навигация по сайту</h2>
 
       <a class="logo" href="/">
         <!-- Логотип интерактивный -->
-        <img class="logo__image" src="images/logo.svg" width="345" height="32" alt="Новости культуры">
+        <img class="logo__image img_pattern" src="images/logo.svg" width="345" height="32" alt="Новости культуры">
         <span class="visually-hidden">Главная страница</span>
       </a>
 
@@ -54,24 +54,25 @@
     </nav>
   </header>
 
-  <main class="main-content">
+  <main class="main-content flex_column">
     <h1 class="visually-hidden">Новости культуры</h1>
 
-    <section class="headline">
+    <section class="headline box-center">
       <!-- Секция главной новости -->
       <h2 class="heading headline__heading">
-        <a class="headline__link" href="news.html">Подводный отель</a>
+        <a class="headline__link" href="index.html">Подводный отель</a>
       </h2>
-      <img class="headline__img" src="images/underwater-hotel.jpg" width="1440" height="464"
+      <img class="headline__img img_pattern" src="images/underwater-hotel.jpg" width="1440" height="464"
         alt="Подводный отель в Дубаи">
 
-      <p class="headline__news">Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты
-        архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счёт нефти</p>
+      <p class="headline__news">Как известно, Дубай – город контрастов. Самые революционные<br> и фантастические мечты
+        архитекторов способен воплотить в жизнь<br> этот мегаполис, построенный на нефти и за счёт нефти</p>
     </section>
 
-    <section class="reviews">
+
+    <section class="reviews flex_column">
       <!-- Секция обзоры -->
-      <h2 class="heading">ОБЗОРЫ</h2>
+      <h2 class="heading reviews__heading">ОБЗОРЫ</h2>
 
       <ul class="reviews__list">
         <li class="reviews__item">
@@ -81,7 +82,8 @@
             </h3>
             <img class="review__img" src="images/monparnasse.jpg" width="371" height="203"
               alt="Сцена из спектакля «Шальные годы» Монпарнаса">
-            <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы
+            <p>В Музее изобразительных искусств имени Пушкина с<br> 29 сентября по 29 ноября проходит выставка «Шальные
+              годы
               Монпарнаса»</p>
           </article>
         </li>
@@ -92,7 +94,7 @@
             </h3>
             <img class="review__img" src="images/clay-in-the-hands.jpg" width="371" height="203"
               alt="Кусок глины в руках">
-            <p>Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к
+            <p>Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес<br> к
               научно-популярной литературе заметно вырос</p>
           </article>
         </li>
@@ -112,84 +114,89 @@
 
     <section class="promo">
       <!-- Секция промо -->
-      <h2 class="heading">АБОНЕМЕНТЫ В ТЕАТР</h2>
-
-      <ul class="promo__list">
-        <li class="promo__item">
-          <h3 class="heading promo__heading">Скидка 50% на весь сезон 2020</h3>
-          <p>Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей</p>
-        </li>
-        <li class="promo__item">
-          <h3 class="heading promo__heading">Места у сцены</h3>
-          <p>Только для обладателей абонементов будет возможность сесть поближе к сцене</p>
-        </li>
-        <li class="promo__item">
-          <h3 class="heading promo__heading">Автограф-сессия актёров</h3>
-          <p>После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф</p>
-        </li>
-      </ul>
-      <a class="link promo__link" href="#">Смотреть</a>
+      <div class="promo__wrapper flex_column">
+        <h2 class="heading promo__heading">АБОНЕМЕНТЫ В ТЕАТР</h2>
+        <ul class="promo__list flex_column">
+          <li class="promo__item">
+            <h3 class="heading item__heading">Скидка 50% на весь сезон 2020</h3>
+            <p>Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости всех спектаклей</p>
+          </li>
+          <li class="promo__item">
+            <h3 class="heading item__heading">Места у сцены</h3>
+            <p>Только для обладателей абонементов будет возможность сесть поближе к сцене</p>
+          </li>
+          <li class="promo__item">
+            <h3 class="heading item__heading">Автограф-сессия актёров</h3>
+            <p>После спектаклей у вас будет возможность пообщаться с актёрами и взять у них автограф</p>
+          </li>
+        </ul>
+        <a class="link promo__link" href="#">Смотреть<span class="arrow-right"></span></a>
+      </div>
     </section>
+
   </main>
 
   <footer class="footer page__footer">
     <!-- Колонтитул нижний сайта -->
-    <h2 class="visually-hidden">Социальные сети и дополнительная навигация</h2>
+    <div class="footer-wrapper box-center flex_column">
+      <h2 class="visually-hidden">Социальные сети и дополнительная навигация</h2>
 
-    <a class="logo" href="/">
-      <!-- Логотип интерактивный -->
-      <img class="logo__image" src="images/white-logo.svg" width="279" height="26" alt="Новости культуры">
-      <span class="visually-hidden">Главная страница</span>
-    </a>
+      <a class="logo footer__logo" href="/">
+        <!-- Логотип интерактивный -->
+        <img class="logo__image" src="images/white-logo.svg" width="279" height="26" alt="Новости культуры">
+        <span class="visually-hidden">Главная страница</span>
+      </a>
 
-    <ul class="menu  list footer__navigation">
-      <!-- Основное меню навигации -->
-      <li class="menu__item">
-        <a class="menu__link" href="#">Новости</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">Обзоры</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">Музыка</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">Архитектура</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">Кино</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">Театр</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">Литература</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">Религия</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#">Живопись</a>
-      </li>
-    </ul>
+      <ul class="menu list footer__navigation">
+        <!-- Основное меню навигации -->
+        <li class="menu__item">
+          <a class="menu__link" href="#">Новости</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Обзоры</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Музыка</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Архитектура</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Кино</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Театр</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Литература</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Религия</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Живопись</a>
+        </li>
+      </ul>
 
-    <ul class="socials list">
-      <li class="socials-item">
-        <a class="social-link instagram-icon" href="#">
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-      <li class="socials-item">
-        <a class="social-link facebook-icon" href="#">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li class="socials-item">
-        <a class="social-link twitter-icon" href="#">
-          <span class="visually-hidden">Twitter</span>
-        </a>
-      </li>
-    </ul>
+      <ul class="socials list">
+        <li class="socials-item">
+          <a class="social-link instagram-icon" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="social-link facebook-icon" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="social-link twitter-icon" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
   </footer>
 
 </body>
