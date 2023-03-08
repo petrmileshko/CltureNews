@@ -283,7 +283,7 @@
 }
 
 .reviews__item:not(:first-child):not(:last-child) .review__heading {
-  color: #FF7931;
+  color: #e15000;
 }
 
 .review {
@@ -376,7 +376,7 @@
   font-size: 12px;
   letter-spacing: 2px;
   color: #ffffff;
-  background-color: #FF7931;
+  background-color: #e15000;
   text-transform: uppercase;
 }
 
