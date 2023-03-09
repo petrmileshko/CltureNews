@@ -282,7 +282,7 @@
   row-gap: 26px;
 }
 
-.reviews__item:not(:first-child):not(:last-child) .review__heading {
+.reviews__item:nth-child(3n+2) .review__heading {
   color: #e15000;
 }
 
