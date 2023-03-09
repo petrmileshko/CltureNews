@@ -1,8 +1,10 @@
-# Разметка главной страницы новостного сайта
+# Разметка главной страницы
 * Новости культуры
 ---
 Версия для ПК дизайн от [HTML Academy](https://htmlacademy.ru).
----
-## [Просмотр](https://portfolio.webpeternet.ru/culture/)
-* Файл
+Освоение навыков семантической разметки.
+```
+## [Просмотреть](https://portfolio.webpeternet.ru/culture/)
+```
+* Макет
 ![image](https://files.webpeternet.ru/culture-news.png)
